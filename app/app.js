@@ -2,13 +2,25 @@
 
 // Declare app level module which depends on views, and core components
 angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
+  'ui.router',
+  'welcome',
+  'newProfile',
 ]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+config(function($stateProvider, $urlRouterProvider) {
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+  $stateProvider
+    .state('welcome', {
+      url: '/welcome',
+      component: 'welcomeComponent',
+    })
+    .state('newProfile', {
+      url: '/new-profile',
+      component: 'newProfileComponent'
+    })
+    .state('newProfile.basic', {
+      url: '/basic',
+      component: 'basicInfo',
+    })
+
+  $urlRouterProvider.otherwise('/welcome');
+});

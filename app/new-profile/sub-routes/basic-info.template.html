@@ -1,0 +1,36 @@
+<div class="col-12">
+	<h3 class="text-center">Basic information {{fullNameVal}}</h3>
+	<form>
+	  <div class="form-group">
+		<label for="inputName">Full Name</label>
+		<input ng-model="fullNameVal" type="name" class="form-control" id="inputFullName" placeholder="Enter full name">
+		<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+	  </div>
+
+	  <div class="form-group">
+		<label for="inputDOB">Date of birth</label>
+		<input ng-model="dobVal" class="form-control" id="dateOfBirth" placeholder="Password">
+	  </div>
+
+	  <div class="form-group">
+		<label for="inputNationality">Nationality</label>
+		<input ng-model="nationalityVal" class="form-control" id="nationality" placeholder="Nationality">
+	  </div>
+
+	  <div class="form-group">
+		<label for="location">Location</label>
+		<input ng-model="locationVal" class="form-control" id="location" placeholder="Enter your location">
+	  </div>
+
+	  <div class="form-group">
+		<label for="gender">Gender</label>
+		<input ng-model="genderVal" class="form-control" id="gender" placeholder="Select gender">
+	  </div>
+
+	  <!-- <a ui-sref="newProfile.sports" class="btn btn-primary mb-2" ng-click="myFunc()"> -->
+	  <button  class="btn btn-primary mb-2" ng-click="$ctrl.myFunc()">
+		Next: sports
+	  </button>
+
+	</div>
+

@@ -1,0 +1,1 @@
+angular.module('newProfile', ['ui.router']);
