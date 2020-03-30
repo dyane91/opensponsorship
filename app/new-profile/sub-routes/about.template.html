@@ -1,0 +1,45 @@
+<div class="col-12">
+
+	<h2 class="text-center">About</h2>
+	  <div class="form-group">
+		<label for="aboutSection">Description</label>
+		<textarea ng-model="description" class="form-control" id="aboutSection" rows="3"></textarea>
+	  </div>
+
+	  <div class="form-group">
+		<label for="interestsSection">Interests</label>
+		<textarea ng-model="interest" class="form-control" id="interestsSection" rows="2"></textarea>
+	  </div>
+
+	  <div class="form-group">
+		<label for="inputMarried">Married?</label>
+		<input ng-model="married" type="text" class="form-control" id="inputMarried">
+	  </div>
+
+	  <div class="form-group">
+		<label for="charitiesSection">Charities</label>
+		<textarea ng-model="charities" class="form-control" id="charitiesSection" rows="2"></textarea>
+	  </div>
+
+	  <div class="form-group">
+		<label for="inputSocialMedia">Social Media</label>
+		<input ng-model="socialMedia" type="text" class="form-control" id="inputSocialMedia">
+	  </div>
+
+	  <div class="form-group">
+		<label for="pets">Pets</label>
+		<input ng-model="pets" type="text" class="form-control" id="pets">
+	  </div>
+
+	  <div class="form-group">
+		<label for="inputAlcohol">Drinks Alcohol?</label>
+		<input ng-model="alcohol" type="text" class="form-control" id="inputAlcohol">
+	  </div>
+
+	  <div class="d-flex justify-content-around">
+		  <button ui-sref="newProfile.sports" class="btn btn-primary mb-2">Previous: sports</button>
+		  <button ng-click="$ctrl.continueAndReview()" class="btn btn-primary mb-2">Review profile</button>
+	  </div>
+
+
+  </div>

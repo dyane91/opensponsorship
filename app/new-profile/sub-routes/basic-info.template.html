@@ -1,36 +1,30 @@
 <div class="col-12">
 	<h3 class="text-center">Basic information {{fullNameVal}}</h3>
-	<form>
 	  <div class="form-group">
-		<label for="inputName">Full Name</label>
-		<input ng-model="fullNameVal" type="name" class="form-control" id="inputFullName" placeholder="Enter full name">
-		<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+		<label for="inputFullName">Full Name</label>
+		<input ng-model="fullName" type="text" class="form-control" id="inputFullName" placeholder="Enter full name">
 	  </div>
 
 	  <div class="form-group">
 		<label for="inputDOB">Date of birth</label>
-		<input ng-model="dobVal" class="form-control" id="dateOfBirth" placeholder="Password">
+		<input ng-model="dob" type="text" class="form-control" id="inputDOB" placeholder="Password">
 	  </div>
 
 	  <div class="form-group">
 		<label for="inputNationality">Nationality</label>
-		<input ng-model="nationalityVal" class="form-control" id="nationality" placeholder="Nationality">
+		<input ng-model="nationality" type="text" class="form-control" id="inputNationality" placeholder="Nationality">
 	  </div>
 
 	  <div class="form-group">
-		<label for="location">Location</label>
-		<input ng-model="locationVal" class="form-control" id="location" placeholder="Enter your location">
+		<label for="inputLocation">Location</label>
+		<input ng-model="location" type="text" class="form-control" id="inputLocation" placeholder="Enter your location">
 	  </div>
 
 	  <div class="form-group">
-		<label for="gender">Gender</label>
-		<input ng-model="genderVal" class="form-control" id="gender" placeholder="Select gender">
+		<label for="inputGender">Gender</label>
+		<input ng-model="gender" text="text" class="form-control" id="inputGender" placeholder="Select gender">
 	  </div>
 
-	  <!-- <a ui-sref="newProfile.sports" class="btn btn-primary mb-2" ng-click="myFunc()"> -->
-	  <button  class="btn btn-primary mb-2" ng-click="$ctrl.myFunc()">
-		Next: sports
-	  </button>
-
+	  <button class="btn btn-primary mb-2" ng-click="$ctrl.saveAndContinue()">Next: sports</button>
 	</div>
 

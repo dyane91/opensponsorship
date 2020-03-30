@@ -1,0 +1,17 @@
+<div class="col-12">
+	<h3 class="text-center">Sports</h2>
+	  <div class="form-group">
+		<label for="inputAssociation">Association</label>
+		<input ng-model="association" class="form-control" id="inputAssociation" placeholder="Enter association">
+	  </div>
+
+	  <div class="form-group">
+		<label for="inputTeam">Team</label>
+		<input ng-model="team" class="form-control" id="inputTeam" placeholder="Enter your team">
+	  </div>
+
+	  <div class="d-flex justify-content-around">
+		<a ui-sref="newProfile.basic" class="btn btn-primary mb-2"> Previous: info</a>
+		<button class="btn btn-primary mb-2" ng-click="$ctrl.saveAndContinue()">Next: about</button>
+	  </div>
+  </div>

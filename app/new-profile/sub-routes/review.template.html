@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<h2>PLAYER INFO:</h2>
+			<ul>
+				<li ng-repeat="(key, val) in newPlayer">
+					{{key}}: {{val}}
+				</li>
+			</ul>
+			<div class="row">
+				<div class="col-6">
+					<button ui-sref="newProfile.sports" class="btn btn-primary mb-2">Previous: sports</button>
+				</div>
+				<div class="col-6">
+					<button ng-click="$ctrl.submit()">SUBMIT</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
