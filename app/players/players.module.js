@@ -1,1 +1,1 @@
-angular.module('players', ['ui.router']);
+angular.module('players', ['ui.router', 'core']);

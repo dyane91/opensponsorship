@@ -1,1 +1,1 @@
-angular.module('welcome', ['ui.router']);
+angular.module('welcome', ['ui.router', 'core']);

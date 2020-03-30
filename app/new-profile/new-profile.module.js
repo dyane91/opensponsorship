@@ -1,1 +1,1 @@
-angular.module('newProfile', ['ui.router']);
+angular.module('newProfile', ['ui.router', 'core']);

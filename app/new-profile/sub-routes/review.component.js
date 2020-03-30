@@ -2,7 +2,7 @@ angular
 	.module('newProfile')
 	.component('reviewComponent', {
 		templateUrl: 'new-profile/sub-routes/review.template.html',
-		controller: ['$scope', '$log', '$http', '$state', 'profile', function ReviewController($scope, $log, $http, profileFactory) {
+		controller: ['$scope', '$log', '$http', '$state', 'profile', function ReviewController($scope, $log, $http, $state, profileFactory) {
 			$scope.newPlayer = profileFactory.newPlayer;
 
 			this.submit = function () {
