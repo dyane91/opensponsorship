@@ -4,7 +4,7 @@ angular
 		templateUrl: 'new-profile/sub-routes/basic-info.template.html',
 		controller: ['$scope', '$log', '$state', 'profile',  function BasicInfoController($scope, $log, $state, profileFactory) {
 			this.$onInit = function () {
-				$scope.fullName = profileFactory.getPlayerInfo('fullName');
+				$scope.name= profileFactory.getPlayerInfo('name');
 				$scope.dob = profileFactory.getPlayerInfo('dob');
 				$scope.nationality = profileFactory.getPlayerInfo('nationality');
 				$scope.location = profileFactory.getPlayerInfo('location');
@@ -12,7 +12,7 @@ angular
 			}
 
 			this.saveAndContinue = function() {
-				profileFactory.addPlayerInfo('fullName', $scope.fullName);
+				profileFactory.addPlayerInfo('name', $scope.name);
 				profileFactory.addPlayerInfo('dob', $scope.dob);
 				profileFactory.addPlayerInfo('nationality', $scope.nationality);
 				profileFactory.addPlayerInfo('location', $scope.location);

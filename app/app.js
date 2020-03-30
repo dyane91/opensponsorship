@@ -6,6 +6,7 @@ angular.module('myApp', [
   'core',
   'welcome',
   'newProfile',
+  'players'
 ]).
 config(function($stateProvider, $urlRouterProvider) {
 
@@ -13,6 +14,10 @@ config(function($stateProvider, $urlRouterProvider) {
     .state('welcome', {
       url: '/welcome',
       component: 'welcomeComponent',
+    })
+    .state('players', {
+      url: '/players',
+      component: 'playersComponent',
     })
     .state('newProfile', {
       url: '/new-profile',

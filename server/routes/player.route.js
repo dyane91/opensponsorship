@@ -1,8 +1,8 @@
+const player = require('../controller/player.controller');
 const express = require('express');
-const route = express.Router();
+const router = express.Router();
 
-route.get('', (req, res) => {});
-route.post('/new-player', (req, res) => {});
-route.put('/:id', (req, res) => {});
+router.get('', player.getPlayers);
+router.post('/new-player', player.createNewPlayer);
 
-module.exports = route;
+module.exports = router;
